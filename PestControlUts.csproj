@@ -72,6 +72,7 @@
     </Compile>
     <Compile Include="Model\Client.cs" />
     <Compile Include="Model\Package.cs" />
+    <Compile Include="Model\Payment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Design\ClientForm.resx">
