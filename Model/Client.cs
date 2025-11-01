@@ -11,7 +11,7 @@ namespace PestControlUts.Model
         public int Id { get; set; }
         public int ClientId { get; set; }
         public string ClientName { get; set; }
-        public string ClientAdrees {  get; set; }
+        public string ClientAdress {  get; set; }
         public string ClientPhone {  get; set; }
         
     }
