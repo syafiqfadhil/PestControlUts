@@ -46,30 +46,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Design\ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HomeForm.Designer.cs">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PaymentForm.cs">
+    <Compile Include="Design\PaymentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PaymentForm.Designer.cs">
+    <Compile Include="Design\PaymentForm.Designer.cs">
       <DependentUpon>PaymentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PackageForm.cs">
+    <Compile Include="Design\PackageForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PackageForm.Designer.cs">
+    <Compile Include="Design\PackageForm.Designer.cs">
       <DependentUpon>PackageForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Client.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Design\ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PaymentForm.resx">
+    <EmbeddedResource Include="Design\PaymentForm.resx">
       <DependentUpon>PaymentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -93,6 +103,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
